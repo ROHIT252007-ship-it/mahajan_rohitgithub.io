@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Creater</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
+    body {
+        background-image: url(i/main2.png);
+        background-repeat: no-repeat;
+
+
+    }
+    .cardsection{
+        border: 2px red solid;
+        position: absolute;
+        width: 100%;
+    }
+
+    .A {
+
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        /* background-color: #100c2e;*/
+        width: 100%;
+    }
+
+    .main_header {
+
+        position: relative;
+        width: 650px;
+        /* background-color: #100c2e;*/
+
+    }
+
+    ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    li {
+        list-style: none;
+    }
+
+    ul li a {
+        color: rgb(244, 250, 255);
+        font-size: 20px
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+
+    .logo {
+        margin-left: 30px;
+        display: flex;
+    }
+
+    .icon {
+        margin-top: 10px;
+    }
+
+    .LOGNAME {
+
+        color: rgb(255, 255, 255);
+        text-align: center;
+        text-decoration: dashed;
+        padding: 10px;
+        font-size: 30px;
+    }
+
+    select {
+        background-color: #00000000;
+        color: #ffffff;
+        margin-bottom: 100px;
+        height: 50px;
+        width: 100px;
+        font-size: 20px;
+        border: 2px #ff000000 solid;
+    }
+
+    option {
+        color: black;
+    }
+
+    .box1 {
+        /*border: 2px red solid;*/
+        width: 500px;
+        height: 300px;
+        margin-top: 125px;
+        margin-left: 125px;
+        padding-top: 50px;
+        text-align: center;
+
+    }
+
+    .subtitle {
+        font-size: 50px;
+        color: rgb(215, 214, 214);
+        text-align: left;
+        text-shadow: 4px 4px 2px rgb(0, 0, 0);
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .lasttitle {
+        color: #ffffff;
+        text-align: left;
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-top: 17px;
+        margin-left: 10px;
+        text-shadow: 4px 4px 2px rgb(0, 0, 0);
+    }
+
+    button {
+        margin-top: 30px;
+        height: 45px;
+        width: 275px;
+        color: rgb(255, 255, 255);
+        background-color: var(--blue-50);
+        border-radius: 6px;
+        font-size: 20px;
+        border: 2px rgb(255, 255, 255) solid;
+        box-shadow: 2px 2px 2px 2px white;
+    }
+
+    /*duduydfyuugufuyud
+eugfug
+wgwigfgwr
+fg8we7gf*/
+
+
+    .s {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* height: 100vh;*/
+        background-color: #ffffff;
+        height: 550px;
+        margin-top: 309px;
+    }
+
+    .slider {
+        width: 283px;
+        /* overflow: hidden;*/
+        /* border: 2px solid #ddd;*/
+        /*  border-radius: 8px;*/
+        /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+
+
+    }
+
+    .menu {
+        height: 50px;
+        width: 100px;
+        margin-top: -52px;
+        margin-left: 530px;
+        visibility: hidden;
+    }
+
+    .slides {
+        display: flex;
+        animation: slideAnimation 39s infinite;
+    }
+
+    .slide {
+        min-width: 100%;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    .slide img {
+        width: 100%;
+        display: block;
+        border-radius: 8px;
+    }
+
+    @keyframes slideAnimation {
+        0% {
+            transform: translateX(-200%);
+        }
+
+        6.25% {
+            transform: translateX(-300%);
+        }
+
+        12.5% {
+            transform: translateX(-400%);
+        }
+
+        18.75% {
+            transform: translateX(-500%);
+        }
+
+        25% {
+            transform: translateX(-600%);
+        }
+
+        31.25% {
+            transform: translateX(-700);
+        }
+
+        37.5% {
+            transform: translateX(-800%);
+        }
+
+        43.75% {
+            transform: translateX(-900%);
+        }
+
+        50% {
+            transform: translateX(-1000%);
+        }
+
+        56.25% {
+            transform: translateX(-900%);
+        }
+
+        62.5% {
+            transform: translateX(-800%);
+        }
+
+        68.75% {
+            transform: translateX(-700%);
+        }
+
+        75% {
+            transform: translateX(-600%);
+        }
+
+        81.25% {
+            transform: translateX(-500%);
+        }
+
+        87.5% {
+            transform: translateX(-400%);
+        }
+
+        93.75% {
+            transform: translateX(-300%);
+        }
+
+        100% {
+            transform: translateX(-200%);
+        }
+    }
+
+    .card {
+        /*  border: 2px red solid;*/
+        display: flex;
+        justify-content: center;
+        margin: 40px;
+        position: sticky;
+        top: 0px;
+
+    }
+
+    .cb {
+        border: 2px rgb(0, 0, 0) solid;
+        height: max-content;
+        width: max-content;
+        display: flex;
+        border-radius: 40px;
+        background-color: rgba(226, 226, 226, 0.314);
+    }
+
+    .re {
+        /* border: 2px red solid;*/
+        height: 455px;
+        width: 450px;
+        justify-content: center;
+        /*background-color: red;*/
+
+    }
+
+    .rt {
+        /* border: 2px red solid;*/
+        height: 455px;
+        width: 450px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .an {
+        border: 2px rgb(0, 0, 0) solid;
+        height: 425px;
+        width: 300px;
+        margin-top: 13px;
+        margin-left: 45px;
+        margin-right: 45px;
+        border-radius: 6px;
+
+    }
+
+    .an1 {
+        animation: an1 9s infinite ease-in-out;
+    }
+
+    .an2 {
+        animation: an2 9s infinite ease-in-out;
+    }
+
+    .an3 {
+        animation: an3 9s infinite ease-in-out;
+    }
+
+    .an4 {
+        animation: an4 9s infinite ease-in-out;
+    }
+
+    .an5 {
+        animation: an5 9s infinite ease-in-out;
+    }
+
+    .an6 {
+        animation: an6 9s infinite ease-in-out;
+    }
+
+    .an7 {
+        animation: an7 9s infinite ease-in-out;
+    }
+
+    @keyframes an1 {
+        0% {
+            background-image: url(r/c1/1.png);
+        }
+
+        50% {
+            background-image: url(r/c1/2.png);
+        }
+
+        100% {
+            background-image: url(r/c1/3.png);
+        }
+
+    }
+
+    @keyframes an2 {
+        0% {
+            background-image: url(r/f1/1.png);
+        }
+
+        50% {
+            background-image: url(r/f1/2.png);
+        }
+
+        100% {
+            background-image: url(r/f1/3.png);
+        }
+
+    }
+
+    @keyframes an3 {
+        0% {
+            background-image: url(r/c2/1.png);
+        }
+
+        50% {
+            background-image: url(r/c2/2.png);
+        }
+
+        100% {
+            background-image: url(r/c2/3.png);
+        }
+
+    }
+
+    @keyframes an4 {
+        0% {
+            background-image: url(r/n/1.png);
+        }
+
+        50% {
+            background-image: url(r/n/2.png);
+        }
+
+        100% {
+            background-image: url(r/n/3.png);
+        }
+
+    }
+
+    @keyframes an5 {
+        0% {
+            background-image: url(r/i/1.png);
+        }
+
+        50% {
+            background-image: url(r/i/2.png);
+        }
+
+        100% {
+            background-image: url(r/i/3.png);
+        }
+
+    }
+
+    @keyframes an6 {
+        0% {
+            background-image: url(r/r2/1.png);
+        }
+
+        50% {
+            background-image: url(r/r2/2.png);
+        }
+
+        100% {
+            background-image: url(r/r2/3.png);
+        }
+
+    }
+
+    .thead {
+        /* border: 2px red solid;*/
+        text-align: center;
+        font-size: 50px;
+        margin-top: 65px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .ttext {
+        /* border: 2px red solid;*/
+        text-align: center;
+        margin-top: 20px;
+        font-size: 27px;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .t4 {
+        font-size: 24px;
+    }
+
+
+
+    /*responsiev*/
+    @media only screen and (max-width:970px) {
+        .menu {
+            visibility: visible;
+        }
+
+        .main_header {
+            visibility: hidden;
+        }
+
+        .box1 {
+            /*border: 2px red solid;*/
+            width: 500px;
+            height: 300px;
+            margin-top: 125px;
+            margin-left: 125px;
+            padding-top: 30px;
+            text-align: center;
+
+        }
+
+        .subtitle {
+            font-size: 30px;
+            color: rgb(215, 214, 214);
+            text-align: left;
+            text-shadow: 4px 4px 2px rgb(0, 0, 0);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .lasttitle {
+            color: #ffffff;
+            text-align: left;
+            font-size: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 17px;
+            margin-left: 10px;
+            text-shadow: 4px 4px 2px rgb(0, 0, 0);
+        }
+    }
+</style>
+<body>
+    <div class="baclimage">
+        <div class="A">
+            <div class="logo">
+                <div class="icon"> <img src="i/icon.png" height="35px"></div>
+                <div class="LOGNAME">
+                    <b> Resume Creater</b>
+                </div>
+            </div>
+            <div class="main_header">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">RESUME</a></li>
+                    <li><a href="">CONTACT AS</a></li>
+                    <li><a href="menu.html">MENU</a></li>
+                </ul>
+                <div class="menu">
+                    <label for="MENU"></label>
+                    <select name="MENU" id="MENU">
+                        <option value="">MENU</option>
+                        <option value="">RESUME</option>
+                        <option value="">CONTECT</option>
+                        <option value="">HOME</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box1">
+        <div class="subtitle">Transform Your Skills into Opportunities with a Powerful Resume</div>
+        <div class="lasttitle"><B>Create Resume and Boost Your Confidenes</B></div>
+        <button type="btn1">Create Your Resume</button>
+    </div>
+    <div class="s">
+
+        <div class="slider">
+
+            <div class="slides">
+                <!-- Add 13 images -->
+                <div class="slide"><img src="i/1.png" alt="Image 1"></div>
+                <div class="slide"><img src="i/2.png" alt="Image 2"></div>
+                <div class="slide"><img src="i/3.png" alt="Image 3"></div>
+                <div class="slide"><img src="i/4.png" alt="Image 4"></div>
+                <div class="slide"><img src="i/5.png" alt="Image 5"></div>
+                <div class="slide"><img src="i/6.png" alt="Image 6"></div>
+                <div class="slide"><img src="i/7.png" alt="Image 7"></div>
+                <div class="slide"><img src="i/8.png" alt="Image 8"></div>
+                <div class="slide"><img src="i/9.png" alt="Image 9"></div>
+                <div class="slide"><img src="i/10.png" alt="Image 10"></div>
+                <div class="slide"><img src="i/11.png" alt="Image 11"></div>
+                <div class="slide"><img src="i/12.png" alt="Image 12"></div>
+                <div class="slide"><img src="i/13.png" alt="Image 13"></div>
+            </div>
+        </div>
+    </div>
+    <!--card1-->
+    <!--<img src="i/1.png" alt="" width="300px">-->
+    <div class="cardsection">
+        <div class="card card1">
+            <div class="cb">
+                <div class="re re1">
+                    <div class="an an1"></div>
+                </div>
+                <div class="rt rt1">
+                    <div class="thead">Chronological Resume
+                    </div>
+                    <div class="ttext">A good choice if your work history shows a consistent career path, like working
+                        in the same industry for several years with each role being more senior than the last.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--card2-->
+        <div class="card card2">
+            <div class="cb">
+                <div class="rt rt2">
+                    <div class="thead">Functional Resume
+                    </div>
+                    <div class="ttext">A good choice if you have gaps in your work history, as it focuses on skills and
+                        experience over work history.
+                    </div>
+                </div>
+                <div class="re re2">
+                    <div class="an an2"></div>
+                </div>
+            </div>
+        </div>
+        <!--card3-->
+        <div class="card card3">
+            <div class="cb">
+                <div class="re re3">
+                    <div class="an an3"></div>
+                </div>
+                <div class="rt rt3">
+                    <div class="thead">Combination Resume</div>
+                    <div class="ttext">
+                        Also called a hybrid resume, this format combines a reverse-chronological work history with your
+                        functional skills and relevant experiences.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--card4-->
+        <div class="card card4">
+            <div class="cb">
+                <div class="rt rt4">
+                    <div class="thead">Non-traditional Resume</div>
+                    <div class="ttext t4">A non-traditional resume is a creative way to present your skills, education,
+                        and experience to potential employers. It can include unique features such as videos, graphics,
+                        images, infographics, portfolios, or custom web pages. Non-traditional resumes can be digital or
+                        physical, and they can be a good way to stand out from other candidates.</div>
+                </div>
+                <div class="re re4">
+                    <div class="an an4"></div>
+                </div>
+            </div>
+        </div>
+        <!--card5-->
+        <div class="card card5">
+            <div class="cb">
+                <div class="re re5">
+                    <div class="an an5"></div>
+                </div>
+                <div class="rt rt5">
+                    <div class="thead">Resume Profile</div>
+                    <div class="ttext">A resume profile is a short introductory paragraph that highlights your skills,
+                        experience, and achievements, and how they relate to a specific job opening. It's a professional
+                        introduction to your resume that's similar to a short cover letter.</div>
+                </div>
+            </div>
+        </div>
+        <!--card6-->
+        <div class="card card6">
+            <div class="cb">
+                <div class="rt rt6">
+                    <div class="thead">Infographic Resume</div>
+                    <div class="ttext">
+                        A resume that uses different colors, typefaces, and pictures to display your design skills. You
+                        can hand it out during interviews, post it on social media, or attach it to email applications.
+                        Nontraditional resume
+                    </div>
+                </div>
+                <div class="re re6">
+                    <div class="an an6"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

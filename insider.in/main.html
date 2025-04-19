@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="main.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<body>
+
+    <header>
+        <nav>
+            <div class="navbar">
+                <ul class="right">
+                    <li class="logo"><img src="image/logo.png" height="35px"></li>
+                    <li class="loc1">
+                        <span>
+                            <img src="image/location2 icon.png" width="20px">
+                        </span>
+                        <span>
+                            event in surat
+                        </span>
+                    </li>
+                </ul>
+                <ul class="left">
+                    <li class="lye">List Your Event</li>
+                    <li class="wwu">Work with us</li>
+                    <li class="sarch"><img src="image/saerch icon.png " width="20px"></li>
+                    <li class="loc2">
+
+
+                        <label for="cities"> <img src="image/location2 icon.png" width="20px"></label>
+                        <select id="cities" class="city-select">
+                            <option value="Surat">Surat</option>
+                            <option value="">Select City</option>
+                            <option value="Hyderabad">Hyderabad</option>
+                            <option value="Visakhapatnam">Visakhapatnam</option>
+                            <option value="Vijayawada">Vijayawada</option>
+                            <option value="Guntur">Guntur</option>
+                            <option value="Itanagar">Itanagar</option>
+                            <option value="Guwahati">Guwahati</option>
+                            <option value="Dibrugarh">Dibrugarh</option>
+                            <option value="Jorhat">Jorhat</option>
+                            <option value="Silchar">Silchar</option>
+                            <option value="Patna">Patna</option>
+                            <option value="Gaya">Gaya</option>
+                            <option value="Bhagalpur">Bhagalpur</option>
+                            <option value="Muzaffarpur">Muzaffarpur</option>
+                            <option value="Raipur">Raipur</option>
+                            <option value="Bilaspur">Bilaspur</option>
+                            <option value="Durg">Durg</option>
+                            <option value="Panaji">Panaji</option>
+                            <option value="Vasco da Gama">Vasco da Gama</option>
+                            <option value="Margao">Margao</option>
+                            <option value="Ahmedabad">Ahmedabad</option>
+                            <option value="Vadodara">Vadodara</option>
+                            <option value="Rajkot">Rajkot</option>
+                            <option value="Gandhinagar">Gandhinagar</option>
+                            <option value="Gurgaon">Gurgaon</option>
+                            <option value="Faridabad">Faridabad</option>
+                            <option value="Ambala">Ambala</option>
+                            <option value="Panipat">Panipat</option>
+                            <option value="Shimla">Shimla</option>
+                            <option value="Manali">Manali</option>
+                            <option value="Dharamsala">Dharamsala</option>
+                            <option value="Ranchi">Ranchi</option>
+                            <option value="Jamshedpur">Jamshedpur</option>
+                            <option value="Dhanbad">Dhanbad</option>
+                            <option value="Bangalore">Bangalore</option>
+                            <option value="Mysore">Mysore</option>
+                            <option value="Mangalore">Mangalore</option>
+                            <option value="Hubballi-Dharwad">Hubballi-Dharwad</option>
+                            <option value="Thiruvananthapuram">Thiruvananthapuram</option>
+                            <option value="Kochi">Kochi</option>
+                            <option value="Kozhikode">Kozhikode</option>
+                            <option value="Kollam">Kollam</option>
+                            <option value="Bhopal">Bhopal</option>
+                            <option value="Indore">Indore</option>
+                            <option value="Gwalior">Gwalior</option>
+                            <option value="Jabalpur">Jabalpur</option>
+                            <option value="Mumbai">Mumbai</option>
+                            <option value="Pune">Pune</option>
+                            <option value="Nagpur">Nagpur</option>
+                            <option value="Nashik">Nashik</option>
+                            <option value="Thane">Thane</option>
+                            <option value="Chennai">Chennai</option>
+                            <option value="Coimbatore">Coimbatore</option>
+                            <option value="Madurai">Madurai</option>
+                            <option value="Salem">Salem</option>
+                            <option value="Tiruchirappalli">Tiruchirappalli</option>
+                            <option value="Kolkata">Kolkata</option>
+                            <option value="Howrah">Howrah</option>
+                            <option value="Siliguri">Siliguri</option>
+                            <option value="Asansol">Asansol</option>
+                            <option value="Jaipur">Jaipur</option>
+                            <option value="Udaipur">Udaipur</option>
+                            <option value="Jodhpur">Jodhpur</option>
+                            <option value="Kota">Kota</option>
+                            <option value="Dehradun">Dehradun</option>
+                            <option value="Haridwar">Haridwar</option>
+                            <option value="Nainital">Nainital</option>
+                            <option value="Lucknow">Lucknow</option>
+                            <option value="Kanpur">Kanpur</option>
+                            <option value="Varanasi">Varanasi</option>
+                            <option value="Agra">Agra</option>
+                            <option value="Ghaziabad">Ghaziabad</option>
+                            <option value="Amritsar">Amritsar</option>
+                            <option value="Ludhiana">Ludhiana</option>
+                            <option value="Jalandhar">Jalandhar</option>
+                            <option value="Bhubaneswar">Bhubaneswar</option>
+                            <option value="Cuttack">Cuttack</option>
+                            <option value="Rourkela">Rourkela</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Solapur">Solapur</option>
+                            <option value="Hubballi-Dharwad">Hubballi-Dharwad</option>
+                            <option value="Tiruppur">Tiruppur</option>
+                        </select>
+                        </span>
+                    </li>
+                    <li class="profil_logo"><img src="image/profile icon.png" width="50px" alt=""></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="app_conteinar">
+            <div>insider.in has a new home.</div>
+            <div class="app"><img src="image/app.png" width="70px"></div>
+            <div style="font-weight: 700; font-size: 15px;">Download the app</div>
+        </div>
+    </header>
+    <section>
+        <div class="si">
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide slide1"><img src="image/img1.jpg" alt="Image 1"></div>
+                    <div class="slide slide2"><img src="image/img2.jpg" alt="Image 2"></div>
+                    <div class="slide slide3"><img src="image/img3.jpg" alt="Image 3"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="trend">
+        <div class="TRENDING">
+            <div class="TRENDING_text">
+                <div class="r_tTRENDING">
+                    <div class="fire_icon">
+                        <div class="f"><img src="image/fire.png " width="30px"></div>
+                    </div>
+                    <div class="te">TRENDING EVENTS</div>
+                </div>
+                <div class="btnviewall">View all</div>
+            </div>
+        </div>
+        <div class="TRENDING_text">
+            <div class="card">
+                <div class="img_section card1">
+                    <div class="event_btn">CRICKET</div>
+                </div>
+                <div class="tex_tsection">
+                    <div class="t1">CCL 2025: Bhojpuri Dabanggs vs Chennai Rhinos and Punjab De Sher vs Karnataka
+                        Bulldozers</div>
+                    <div class="t2">
+                        <span><img src="image/date.png" width="25px"></span>
+                        <span>February 22 | 2 PM</span>
+                    </div>
+                    <div class="t3">
+                        <span><img src="image/location icon.png" width="25px"></span>
+                        <span>Lalbhai Contractor Stadium, Surat</span>
+                    </div>
+                    <div class="t4">
+                        <div class="price">₹50 Onwards</div>
+                        <div class="buy_now">|&nbsp; Buy now</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img_section card2">
+                    <div class="event_btn">CRICKET</div>
+                </div>
+                <div class="tex_tsection">
+                    <div class="t1">CCL 2025: Bengal Tigers vs Telugu Warriors and Mumbai Heroes vs Punjab De Sher</div>
+                    <div class="t2">
+                        <span><img src="image/date.png" width="25px"></span>
+                        <span>February 23 | 2 PM</span>
+                    </div>
+                    <div class="t3">
+                        <span><img src="image/location icon.png" width="25px"></span>
+                        <span>Lalbhai Contractor Stadium, Surat</span>
+                    </div>
+                    <div class="t4">
+                        <div class="price">₹50 Onwards</div>
+                        <div class="buy_now">|&nbsp; Buy now</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img_section card3">
+                    <div class="event_btn">CRICKET</div>
+                </div>
+                <div class="tex_tsection">
+                    <div class="t1">Thrifty X Strangers Meet (SURAT) </div>
+                    <div class="t2">
+                        <span><img src="image/date.png" width="25px"></span>
+                        <span>February 16 | 2 PM</span>
+                    </div>
+                    <div class="t3">
+                        <span><img src="image/location icon.png" width="25px"></span>
+                        <span>Chaipartner, Surat</span>
+                    </div>
+                    <div class="t4">
+                        <div class="price">₹299 Onwards</div>
+                        <div class="buy_now">|&nbsp; Buy now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    &nbsp; <br>
+    &nbsp; <br>
+    <section class="FIND_NEW_EXPERIENCES">
+        <div class="TRENDING">
+            <div class="TRENDING_text">
+                <div class="r_tTRENDING">
+                    <div class="fire_icon">
+                        <div class="f"><img src="image/location icon.png " width="30px"></div>
+                    </div>
+                    <div>
+                        <div class="te">FIND NEW EXPERIENCES</div>
+                        <div>Explore. Discover. Make a Plan</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fne_image">
+            <img src="image/commedy.png" alt="" height="130" width="170">
+            <img src="image/coures.png" alt="" height="130" width="170">
+            <img src="image/poket frindly.png" alt="" height="130" width="170">
+            <img src="image/workshop.png" alt="" height="130" width="170">
+            <img src="image/music.png" alt="" height="130" width="170">
+            <img src="image/art.png" alt="" height="130" width="170">
+        </div>
+    </section>
+    <section>
+        <div class="TRENDING">
+            <div class="TRENDING_text">
+                <div class="r_tTRENDING">
+                    <div class="fire_icon">
+                        <div class="f"><img src="image/SAVE.png " width="30px"></div>
+                    </div>
+                    <div>
+                        <div class="te fe">FEATURED EVENTS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp; <br>
+        <div style="align-items: center;display: flex; justify-content: center;">
+            <div class="ecards">
+                <div class="ecard">
+                    <div class="ecard_img ecard1">
+                        <div class="img_section">
+                            <div class="event_btn ebtn" style="font-size: 12PX;">PERFORMANCE</div>
+                        </div>
+                    </div>
+                    <div class="ecard_text">
+                        <div class="t2">
+                            <span><img src="image/date.png" width="25px"></span>
+                            <span>Video in Demand</span>
+                        </div>
+                        <div class="t2">
+                            <span><img src="image/video icon.png" width="25px"></span>
+                            <span>Watch in insider</span>
+                        </div>
+                        <div class="t4  et3">
+                            <div class="price ">₹299</div>
+                            <div class="buy_now eb">|&nbsp; Buy now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ecard">
+                    <div class="ecard_img ecard2">
+                        <div class="img_section">
+                            <div class="event_btn ebtn">COURSES</div>
+                        </div>
+                    </div>
+                    <div class="ecard_text">
+                        <div class="t2">
+                            <span><img src="image/date.png" width="25px"></span>
+                            <span>February 26|4PM</span>
+                        </div>
+                        <div class="t2">
+                            <span><img src="image/video icon.png" width="25px"></span>
+                            <span>Online</span>
+                        </div>
+                        <div class="t4  et3">
+                            <div class="price ">₹450</div>
+                            <div class="buy_now eb">|&nbsp; Buy now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ecard">
+                    <div class="ecard_img ecard3">
+                        <div class="img_section">
+                            <div class="event_btn ebtn" style="font-size: 12PX;">HEALTH & WELLNESS</div>
+                        </div>
+                    </div>
+                    <div class="ecard_text">
+                        <div class="t2">
+                            <span><img src="image/date.png" width="25px"></span>
+                            <span>July 4|1:31pm - July a|1.31am</span>
+                        </div>
+                        <div class="t2">
+                            <span><img src="image/video icon.png" width="25px"></span>
+                            <span>Watch in insider</span>
+                        </div>
+                        <div class="t4  et3">
+                            <div class="price ">₹399</div>
+                            <div class="buy_now eb">|&nbsp; Buy now</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ecard">
+                    <div class="ecard_img ecard4">
+                        <div class="img_section">
+                            <div class="event_btn ebtn">THEATRE</div>
+                        </div>
+                    </div>
+                    <div class="ecard_text">
+                        <div class="t2">
+                            <span><img src="image/date.png" width="25px"></span>
+                            <span>Video in Demand</span>
+                        </div>
+                        <div class="t2">
+                            <span><img src="image/video icon.png" width="25px"></span>
+                            <span>Watch in insider</span>
+                        </div>
+                        <div class="t4  et3">
+                            <div class="price ">₹149</div>
+                            <div class="buy_now eb">|&nbsp; Buy now</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    &nbsp; <br>
+    &nbsp; <br>
+    <section>
+        <div class="TRENDING">
+            <div class="TRENDING_text">
+                <div class="r_tTRENDING">
+                    <div class="fire_icon">
+                        <div class="f"><img src="image/squre icon.jpeg " width="30px"></div>
+                    </div>
+                    <div>
+                        <div class="te fe">BROWES EVENTS BY GENRE</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp; <br>
+        <div>
+            <div class="be">
+                <div class="container">
+                    <div class="box">
+                        <img src="image/emoji.png" width="60px">
+                    </div>
+                    <div class="container_text">
+                        <p>Comedy</p>
+                        <p style="font-size: 14px; color:rgb(167, 166, 166); margin-top: 5px;">2 envent</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box"> <img src="image/criket.png" width="60px"></div>
+                    <div class="container_text">
+                        <p>Cricket</p>
+                        <p style="font-size: 14px; color:rgb(167, 166, 166); margin-top: 5px;">2 envent</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box"> <img src="image/ticket.png" width="60px"></div>
+                    <div class="container_text">
+                        <p>Meet Up</p>
+                        <p style="font-size: 14px; color:rgb(167, 166, 166); margin-top: 5px;">1 envent</p>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="box"> <img src="image/ticket.png" width="60px"> </div>
+                    <div class="container_text">
+                        <p>Self <br>Improvement</p>
+                        <p style="font-size: 14px; color:rgb(167, 166, 166); margin-top: 5px;">1 envent</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        </div>
+        </div>
+    </section>
+    &nbsp;<br>
+    <section class="trend">
+        <div class="TRENDING">
+            <div class="TRENDING_text">
+                <div class="r_tTRENDING">
+                    <div class="fire_icon">
+                        <div class="f"><img src="image/workshop icon.png " width="30px"></div>
+                    </div>
+                    <div class="te">WORKSHOPS</div>
+                </div>
+            </div>
+        </div>
+        <div class="TRENDING_text">
+            <div class="card">
+                <div class="img_section card4">
+                    <div class="event_btn ebtn">WORKSHOPS</div>
+                </div>
+                <div class="tex_tsection">
+                    <div class="t1">Speed Date Online</div>
+                    <div class="t2">
+                        <span><img src="image/date.png" width="25px"></span>
+                        <span>June 12 | 10PM-July 28 | 10PM</span>
+                    </div>
+                    <div class="t3">
+                        <span><img src="image/video icon.png" width="25px"></span>
+                        <span>Online</span>
+                    </div>
+                    <div class="t4 et3">
+                        <div class="price">₹49 Onwards</div>
+                        <div class="buy_now">|&nbsp; Buy now</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img_section card5">
+                    <div class="event_btn ebtn">WORKSHOPS</div>
+                </div>
+                <div class="tex_tsection">
+                    <div class="t1">Terence Lewis Dance - Contemporary Tutorials</div>
+                    <div class="t2">
+                        <span><img src="image/date.png" width="25px"></span>
+                        <span>Video On Demand</span>
+                    </div>
+                    <div class="t3">
+                        <span><img src="image/video icon.png" width="25px"></span>
+                        <span>Watch on insider</span>
+                    </div>
+                    <div class="t4 et3">
+                        <div class="price">₹700</div>
+                        <div class="buy_now">|&nbsp; Buy now</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img_section card6">
+                    <div class="event_btn ebtn">WORKSHOPS</div>
+                </div>
+                <div class="tex_tsection">
+                    <div class="t1">Date Online</div>
+                    <div class="t2">
+                        <span><img src="image/date.png" width="25px"></span>
+                        <span>December 25 | 8PM-January 5 | 7PM
+                        </span>
+                    </div>
+                    <div class="t3">
+                        <span><img src="image/video icon.png" width="25px"></span>
+                        <span>Online</span>
+                    </div>
+                    <div class="t4 et3">
+                        <div class="price">₹50 Onwards</div>
+                        <div class="buy_now">|&nbsp; Buy now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    &nbsp;<br>
+    &nbsp;<br>
+    <section class="trend">
+        <div class="TRENDING">
+            <div class="TRENDING_text">
+                <div class="r_tTRENDING">
+                    <div class="fire_icon">
+                        <div class="f"><img src="image/coures icon.png" width="30px"></div>
+                    </div>
+                    <div class="te">COURSES</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="TRENDING_text">
+            <div class="card">
+                <div class="img_section card7">
+                    <div class="event_btn ebtn">COURSES</div>
+                </div>
+                <div class="tex_tsection">
+                    <div class="t1">1% Club's Retire Early Masterclass with Sharan Hegde</div>
+                    <div class="t2">
+                        <span><img src="image/date.png" width="25px"></span>
+                        <span>January 26 | 4PM</span>
+                    </div>
+                    <div class="t3">
+                        <span><img src="image/video icon.png" width="25px"></span>
+                        <span>Online</span>
+                    </div>
+                    <div class="t4 et3">
+                        <div class="price">₹450</div>
+                        <div class="buy_now">|&nbsp; Buy now</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img_section card8">
+                    <div class="event_btn ebtn">COURSES</div>
+                </div>
+                <div class="tex_tsection">
+                    <div class="t1">1% Club's Credit Card Masterclass with Aly Hajiani</div>
+                    <div class="t2">
+                        <span><img src="image/date.png" width="25px"></span>
+                        <span>January 25 | 4PM</span>
+                    </div>
+                    <div class="t3">
+                        <span><img src="image/video icon.png" width="25px"></span>
+                        <span>Online</span>
+                    </div>
+                    <div class="t4 et3">
+                        <div class="price">₹90</div>
+                        <div class="buy_now">|&nbsp; Buy now</div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="img_section card9">
+                    <div class="event_btn ebtn">COURSES</div>
+                </div>
+                <div class="tex_tsection">
+                    <div class="t1">Wine 101 by Gargi Kothari</div>
+                    <div class="t2">
+                        <span><img src="image/date.png" width="25px"></span>
+                        <span>Video on Demand
+                        </span>
+                    </div>
+                    <div class="t3">
+                        <span><img src="image/video icon.png" width="25px"></span>
+                        <span>Watch On insuder</span>
+                    </div>
+                    <div class="t4 et3">
+                        <div class="price">₹1500</div>
+                        <div class="buy_now">|&nbsp; Buy now</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    &nbsp;<br>
+    &nbsp;<br>
+
+    <section>
+        <div class="TRENDING">
+            <div class="TRENDING_text">
+                <div class="r_tTRENDING">
+                    <div class="fire_icon">
+                        <div class="f"><img src="image/WEEK.png" width="30px"></div>
+                    </div>
+                    <div class="te">EVENTS THIS WEEK</div>
+                </div>
+            </div>
+        </div>
+        <div class="WEEK">
+            <div class="box2">
+                <div class="wt1">Today</div>
+                <div class="wt2">Mon, 10 Feb</div>
+            </div>
+            <div class="box2">
+                <div class="wt1">Tomorrow</div>
+                <div class="wt2">Tue, 11 Feb</div>
+            </div>
+            <div class="box2">
+                <div class="wt1">Weekend</div>
+                <div class="wt2">15-16 Feb</div>
+            </div>
+
+        </div>
+    </section>
+    &nbsp;<br>
+    &nbsp;<br>
+
+    <section>
+        <div class="TRENDING">
+            <div class="TRENDING_text">
+                <div class="r_tTRENDING">
+                    <div class="fire_icon">
+                        <div class="f"><img src="image/magazine icon.png" width="30px"></div>
+                    </div>
+                    <div class="te">MAGAZINE</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="MAGAZINE">
+            <div class="container2 m1">
+                <div class="event_btn ebtn">COURSES</div>
+                <div class="m_text">Manch - Nine Diverse Visions of Theatre</div>
+            </div>
+            <div class="container2 m2">
+                <div class="event_btn ebtn">COURSES</div>
+                <div class="m_text">Six Teams, One Trophy – Welcome to the Big Cricket League 2024!</div>
+            </div>
+            <div class="container2 m3">
+                <div class="event_btn ebtn">COURSES</div>
+                <div class="m_text">Experience the ultimate thrill at Wonderla!</div>
+            </div>
+            <div class="container2 m4">
+
+                <div class="event_btn ebtn">COURSES</div>
+                <div class="m_text">The Football Revolution Arrives: Super League Kerala 2024</div>
+
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="TRENDING">
+            <div class="TRENDING_text">
+                <div class="r_tTRENDING">
+                    <div class="fire_icon">
+                        <div class="f"><img src="image/maic.png " width="30px"></div>
+                    </div>
+                    <div class="te">ARTIES</div>
+                </div>
+                <div class="btnviewall">View all</div>
+            </div>
+        </div>
+        &nbsp;<br>
+    
+        <div style="width: 1150px; display: flex;">
+            <div class="arties_box">
+                <div class="arties_i">
+                    <img src="image/arties1.jpg" width="170px">
+                </div>
+                <div class="arties_name">Yo Yo Honey Shigh</div>
+            </div>
+            <div class="arties_box">
+                <div class="arties_i">
+                    <img src="image/arties2.jpg" width="170px">
+                </div>
+                <div class="arties_name">Arajit Shigh</div>
+            </div>
+            <div class="arties_box">
+                <div class="arties_i">
+                    <img src="image/arties3.jpg" width="170px">
+                </div>
+                <div class="arties_name">Sherya Priyam Roy</div>
+            </div>
+            <div class="arties_box">
+                <div class="arties_i">
+                    <img src="image/arties4.jpg" width="170px">
+                </div>
+                <div class="arties_name">Raftaar</div>
+            </div>
+            <div class="arties_box">
+                <div class="arties_i">
+                    <img src="image/arties5.jpg" width="170px">
+                </div>
+                <div class="arties_name">Badhshah</div>
+            </div>
+            <div class="arties_box">
+                <div class="arties_i">
+                    <img src="image/arties6.jpg" width="170px">
+                </div>
+                <div class="arties_name">Sereya Ghoshal</div>
+            </div>
+
+        </div>
+    </section>
+    &nbsp;<br>
+    &nbsp;<br>
+    &nbsp;<br>
+    &nbsp;<br>
+    &nbsp;<br>
+    &nbsp;<br>
+    <section>
+        <div style="width: 1150px;">
+            <img src="image/INSIDER.png" width="1150px" style="border-radius: 15px;">
+        </div>
+    </section>
+    &nbsp;<br>
+    &nbsp;<br>
+    &nbsp;<br>
+    <footer class="foot">
+        <div style="width: 1150px;">
+        <div class="ft1">
+            <img src="image/logo.png" width="160px" alt="">
+        </div>
+        <div class="ft2">insider.in is a platform that helps you discover and buy the best in events, travel and food in your city. We strive to curate experiences that are worth your time and money, possibly something you have never tried before.</div>
+        <div class="ft3">For event organizers</div>
+        <div class="ft4">insider.in is built by the same team that created Bacardi NH7 Weekender (us) and we sure know what goes into putting together a great experience. Our technology, marketing and customer support can help you build a community of not just ticket buyers, but also fans.</div>
+        <div class="ft5">ABOUT US &nbsp;WORK WITH US &nbsp;PRIVACY POLICY &nbsp;TERMS $ CONDITIONS &nbsp;LIST WITH US &nbsp;CONTACT US &nbsp;FAQs</div>
+        <div class="ft6">Find us on:
+            <img src="image/facebook.png"  width="30px">
+            <img src="image/instagram-white-icon.webp" width="30px alt="">
+            <img src="image/x.png" width="30px">
+        </div>   
+    </div>
+    </footer>
+
+    <script>
+        $(document).ready(function () {
+            $('.city-select').select2({
+                placeholder: "Search for a city...",
+                allowClear: true
+            });
+        });
+    </script>
+</body>
+
+</html>

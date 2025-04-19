@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infinite Image Slider</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: #f5f5f5;
+        }
+        .slider {
+            width: 600px;
+            overflow: hidden;
+            position: relative;
+        }
+        .slides {
+            display: flex;
+            width: calc(600px * 6); /* Number of images (3) * 2 for seamless looping */
+            animation: slide 10s linear infinite;
+        }
+        .slide {
+            width: 600px;
+            flex-shrink: 0;
+        }
+        .slide img {
+            width: 100%;
+            height: auto;
+        }
+        @keyframes slide {
+            0% { transform: translateX(0); }
+            20% { transform: translateX(-600px); }
+            40% { transform: translateX(-1200px); }
+            60% { transform: translateX(-1800px); }
+            80% { transform: translateX(-2400px); }
+            100% { transform: translateX(0); } /* Seamless loop */
+        }
+    </style>
+</head>
+<body>
+
+<div class="slider">
+    <div class="slides">
+        <div class="slide"><img src="image/img1.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="image/img2.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="image/img3.jpg" alt="Slide 3"></div>
+        <!-- Duplicate slides for seamless transition -->
+        <div class="slide"><img src="image/img1.jpg" alt="Slide 1"></div>
+        <div class="slide"><img src="image/img2.jpg" alt="Slide 2"></div>
+        <div class="slide"><img src="image/img3.jpg" alt="Slide 3"></div>
+    </div>
+</div>
+
+</body>
+</html>

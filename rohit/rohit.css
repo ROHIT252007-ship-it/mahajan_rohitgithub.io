@@ -1,0 +1,372 @@
+.A{
+    border:2px solid rgb(174, 168, 168);
+    float:right;
+    width: 100px;
+    height: 100px;
+    top:2px;   
+    margin: auto;      
+    background-color: rgb(133, 133, 133);
+    border-radius: 100%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.B{
+    border:2px solid rgb(255, 255, 255);
+    width: 23%;
+    margin-right: 450px;
+    
+}
+header{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.C{
+    /*border: 2px solid red;*/
+    width: 25%;
+    display: inline-block;
+    margin: auto;
+    margin-left: 100px;
+    margin-right: 70px;
+}
+.D{
+    border: 10px solid rgb(24, 35, 156);
+    background-color: rgb(24, 35,156);
+   /* padding-right: 1365px;*/
+    margin-top:10px;
+    margin-bottom: 20px;
+    color: rgb(255, 255, 255);
+    
+    justify-content: space-evenly;
+}
+.E{
+    /*border: 2px solid red;*/
+    display: inline-block;
+    width: 25%;
+    margin: 0px  auto;
+    margin-right: 60px;
+}
+.F{
+    /*border: 2px solid red;*/
+    width: 30%;
+    display: inline-block;
+}
+.G{
+    margin-top:10px;
+    
+}
+.H{
+    display: flex;
+    justify-content: space-evenly;   
+}
+
+.o{
+    display: flex;
+    border: 2px SOLID RED;
+}
+
+.L{
+    display: block;
+    /*border: 2PX SOLID red;*/
+    width: 500px;
+    height: 310px; 
+   /* margin: 10px;
+    margin-top: 10px;*/ 
+    margin-right: 50px;
+}
+.M{
+    display: inline-block;
+    /*border: 2PX SOLID red;*/
+    width: 350px;
+    height: 310px;
+    /*margin: 10px;*/
+    margin-right: 50px;
+}
+    
+
+
+.N{
+    display: inline-block;
+    /*border: 2PX SOLID red;*/
+    width: 200px;
+    height: 415px;
+   /* margin: 10px;*/
+   
+}
+.p{
+    border: 2PX SOLID red;
+    width: 200px; 
+    float: right;
+    margin-top: 0px;
+    margin-right:250px ;
+    margin-bottom: 100PX;
+
+}
+.I
+{
+   /*border: 2PX SOLID red; */
+    height: 10cm;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(13, 87, 171, 0.889);
+    color: #FFFFFF;
+    margin-top: 20px;
+}
+.R{
+    /*border: 2PX SOLID red;*/
+    margin-top: 30px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    justify-content: space-evenly;   
+}
+.O{
+    /*border: 2PX SOLID red;*/
+    margin-top: 30px;
+    padding-left: 100px;
+    background-color: rgb(75, 74, 74);
+    color: #FFFFFF;
+    height: 30px;
+    padding-top: 8px;
+}
+.AB{
+    /*border: 2PX SOLID rgb(110, 179, 53);*/
+    height: 450px;
+    background-color: rgb(37, 34, 34);
+}
+.CD{
+    /*border: 2PX SOLID rgb(25, 70, 205);*/
+  
+    height: 350px;
+   
+    display: flex;
+    
+
+}
+.EF{
+    /*border: 2PX SOLID red;*/
+    height: 70px;
+    padding-left: 100px;
+    display: flex;
+
+}
+.GH{
+    animation: rohit 30s /*linear*/ infinite;
+   height: 338px;
+    width: 1800px;
+    margin-top: 10px;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes rohit{
+    0%{
+        background-image: url(pm-suryaghar_0.jpg);
+    }
+    25%{
+        background-image:  url(img1.jpg);
+       
+    }
+    50%{
+        background-image:  url(img2.jpg);
+        
+    }
+    75%{
+        background-image:  url(img3.jpg);
+        
+    }
+    100%{
+        background-image:  url(img4.jpg);
+        
+    }
+
+}
+
+
+
+
+
+
+/*ID PART*/
+#a{
+    border: 2PX SOLID rgb(142, 141, 141);
+    width: 150px ;
+    background-color: rgb(142, 141, 141);
+    color: rgb(255, 255, 255);
+    margin-bottom: 0px;
+}
+
+#b{
+    border: 2PX SOLID rgb(142, 141, 141);  
+    margin-top: 0px;
+
+}
+#c{
+    border: 2PX SOLID #e5e5e5;
+    background-color: #e5e5e5;
+    margin-bottom: 2px;
+}
+#d{
+    /* border: 2PX SOLID red; */
+    width: 475px;
+    margin-right: 0px;
+}
+#e{
+    /*border: 2PX SOLID red; */
+    width: 350px;
+}
+#f{
+    /*border: 2PX SOLID red; */
+    width: 210px;
+    list-style: none;
+    overflow: auto;
+}
+#g{
+   /* border: 2PX SOLID red;*/
+    width: 90px;
+    height: 5cm;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+ #i{
+   /* border: 2PX SOLID red;*/
+    margin-bottom:15px; 
+    margin-top: 15px;
+    background-color: rgb(76, 180, 221);
+    color: black;
+ } 
+#h{
+    /*border: 2PX SOLID red;*/
+    margin-bottom:15px;
+    background-color: lightsalmon;
+    color: black;
+ }
+#k{
+    /*border: 2PX SOLID red;*/
+    margin-bottom:15px;
+    background-color: rgb(163, 222, 163);
+    color: black;
+}
+   
+#l{
+    /*border: 2PX SOLID red;*/
+    margin-bottom:15px;
+    background-color: lightpink;
+    color: black;
+}
+#j{
+    /*border: 2PX SOLID red;*/
+    margin-left: 10px;
+    width: 500PX;
+
+}
+#m{
+    /*border: 2PX SOLID red; */
+    display: flex;
+    margin-top: 15px;
+    height: 6CM;
+}   
+#n{
+    margin-top: 20px;
+    margin-bottom: 15px; 
+}
+#o{
+    /*border: 2PX SOLID red;*/
+    width: 205px;
+    height: 200px;
+
+}
+#q{
+    /*border: 2PX SOLID red;*/
+    width: 200px;
+    height: 200px;
+
+}
+#r{
+    /*border: 2PX SOLID red;*/
+    width: 200px;
+    height: 200px;
+}
+#s{
+   /* border: 2PX SOLID red;*/
+    width: 200px;
+    height: 200px;
+}
+#t{
+  /*  border: 2PX SOLID red;*/
+    width: 200px;
+    height: 200px;
+}
+#u{
+   /* margin-right: 65px;*/
+    margin-left: 65px;
+    text-align:center;
+}
+#v{
+   /* border: 2PX SOLID red;*/
+    width: 200px;
+    margin-left: 100PX;
+    color: #ccbfbf;
+    margin-right: 50px;
+}
+
+#w{
+    /*border: 2PX SOLID red;*/
+    width: 200px;
+    padding-top: 35px;
+    color: #ccbfbf;
+    margin-right: 80px;
+}
+#x{
+    /*border: 2PX SOLID red;*/
+    width: 200px;
+    color: #ccbfbf;
+    margin-right: 150px;
+}
+#y{
+   /* border: 2PX SOLID red;*/
+    width: 236px;
+    padding-top: 90px;
+}
+#z{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color:white;
+}
+#ab{
+    padding-top: 17px;
+    margin-right: 20px;
+}
+#cd{
+    padding-top: 17px;
+    width: 950px;
+    margin-right: 50px;
+    color: #cacaca;
+}
+#ef{
+    /*border: 2PX SOLID red;*/
+    color: #cacaca;
+    text-align: center;
+}
+
+/*direct tags*/
+
+button{
+    background-color:  rgba(43, 104, 174, 0.889);
+    color: #FFFFFF;
+    border: 1PX SOLID rgb(111, 127, 172);
+    margin-top: PX;
+    width: 100px;
+    height: 25px;
+}
+li{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+h1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+H1{
+    margin-bottom: 5px;
+}
+
